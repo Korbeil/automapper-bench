@@ -1,0 +1,19 @@
+Korbeil\AutoMapperBenchmark\Person:
+  exclusion_policy: ALL
+  properties:
+    id:
+      type: integer
+      expose: true
+    name:
+      type: string
+      expose: true
+    married:
+      type: boolean
+      expose: true
+    favoriteColors:
+      type: array
+      expose: true
+      serialized_name: favoriteColors
+    mother:
+      type: Korbeil\AutoMapperBenchmark\Person
+      expose: true
